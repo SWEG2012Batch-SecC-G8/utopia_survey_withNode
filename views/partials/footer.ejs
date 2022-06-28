@@ -1,0 +1,85 @@
+<footer>
+    <div class="innerFooter " style="display:block">
+        <div class="socialLinks">
+            <ul>
+                <li class="socialItems">
+                    <a href="https://www.facebook.com/"> <img src="../images/facebook.png" alt="" width="40px"> </a>
+                </li>
+                <li class="socialItems">
+                    <a href="https://www.instagram.com/"> <img src="../images/insta.png" alt="" width="45px"> </a>
+                </li>
+                <li class="socialItems">
+                    <a href="#"> <img src="../images/gmai.png" alt="" width="45px"> </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+    <div class="outterFooter">
+        © Copyright 2021 Utopia survey. All rights reserved
+        <br>
+        <a href="#">hegree@excutive.com</a>
+    </div>
+
+</footer>
+
+<script>
+    pageUrl = window.location.href.split("/")
+    pagePath = pageUrl[pageUrl.length - 1]
+        //alert(pagePath)
+    document.getElementById("homeL").innerHTML = "Home";
+    document.getElementById("contactusL").innerHTML = "Contact Us";
+    document.getElementById("helpL").innerHTML = "Help";
+    document.getElementById("aboutusL").innerHTML = "About Us";
+    document.getElementById("profileL").innerHTML = "Profile";
+    document.getElementById("loginL").innerHTML = "Log In";
+    document.getElementById("signupL").innerHTML = "Sign Up";
+    document.getElementById("logoutL").innerHTML = "Log Out";
+    //document.getElementById("mainpageL").innerHTML = "Main Page";
+    if (pagePath == "page 3.php" || pagePath == "create_survey.php" || pagePath == "mySurvey.php" || pagePath == "profile1.php" || pagePath == "studio.php" || pagePath == "take_survey.php" || pagePath == "log in.php") {
+        document.getElementById("homeL").innerHTML = "";
+        document.getElementById("signupL").innerHTML = "";
+
+    }
+    if (pagePath == "") {
+        document.getElementById("homeL").innerHTML = "Home";
+        document.getElementById("contactusL").innerHTML = "Contact Us";
+        document.getElementById("helpL").innerHTML = "Help";
+        document.getElementById("aboutusL").innerHTML = "About Us";
+        document.getElementById("profileL").innerHTML = "Profile";
+        document.getElementById("loginL").innerHTML = "Log In";
+        document.getElementById("signupL").innerHTML = "Sign Up";
+        document.getElementById("logoutL").innerHTML = "Log Out";
+    }
+
+    if (pagePath == "login") {
+        document.getElementById("profileL").innerHTML = "";
+        document.getElementById("logoutL").innerHTML = "";
+        //document.getElementById("mainL").innerHTML = "";
+        document.getElementById("loginL").innerHTML = "";
+    }
+    if (pagePath == "aregistration page.html") {
+        document.getElementById("loginL").innerHTML = "";
+        document.getElementById("logoutL").innerHTML = "";
+        document.getElementById("profileL").innerHTML = "";
+        document.getElementById("mainL").innerHTML = "";
+    }
+    if (pagePath == "profile1.php") {
+        document.getElementById("profileL").innerHTML = "";
+        document.getElementById("loginL").innerHTML = "";
+        document.getElementById("signupL").innerHTML = "";
+        document.getElementById("aboutusL").innerHTML = "";
+        document.getElementById("helpL").innerHTML = "";
+    }
+
+    if (pagePath == "page 3.php") {
+        document.getElementById("mainL").innerHTML = "";
+        // hrefm = "../pages/page 3.php?email=" + req.session.email;
+    }
+</script>
+</body>
+
+</html>

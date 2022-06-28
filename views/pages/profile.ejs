@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width,initial,scale=1" />
+    <link rel="stylesheet" href="../css/header-footer.css" />
+    <title>Create Survey</title>
+    <link rel="stylesheet" href="../css/pr.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="../../stylesheets/buttons.css">
+    <link rel="stylesheet" href="../../stylesheets/header-footer.css">
+    <link rel="stylesheet" href="../../stylesheets/Registration.css">
+    <link rel="stylesheet" href="../../stylesheets/admin.css">
+    <link rel="stylesheet" href="../../stylesheets/analyze.css">
+    <link rel="stylesheet" href="../../stylesheets/button.css">
+    <link rel="stylesheet" href="../../stylesheets/create_survey.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+</head>
+
+<body topmargin=0px leftmargin=0px rightmargin=0px bottommargin=0px>
+    <header>
+        <a class="logo" href="../index.html"><img src="../logo/logo1.png" alt="logo image " height=100px></a>
+        <nav class="navigationBar">
+            <ul class="nav">
+
+                <li>
+                    <a id="homeL" href=""> </a>
+                </li>
+
+
+
+                <li>
+                    <a id="signupL" href="/pages/signup"> </a>
+                </li>
+                <li>
+                    <a id="signupL" href="/user/first">landing page</a>
+                </li>
+
+                <div class="dropdown">
+                    <a class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li>
+                            <a id="loginL" class="dropdown-item  text-dark" href="/pages/login"> </a>
+                        </li>
+                        <li>
+                            <a id="profileL" class="dropdown-item  text-dark" href="/user/profile"> </a>
+                            <li>
+                                <a id=" logoutL " class="dropdown-item text-dark " href="../php/logout.php "></a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item text-dark " href="../pages/page 3.php?email=?php echo $_SESSION[ 'email']?>">
+
+                                </a>
+                            </li>
+                            <li>
+                                <a id="contactusL" class="dropdown-item  text-dark" href="../pages/contactUs.php">
+                                </a>
+                            </li>
+
+                            <li>
+                                <a id="aboutusL" class="dropdown-item  text-dark" href="../index.php#aboutus"></a>
+                            </li>
+                            <li>
+                                <a id="helpL" class="dropdown-item  text-dark" href="contactus"> </a>
+                            </li>
+
+
+
+                    </ul>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <section style="background-color: #eee;">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col">
+                    <nav aria-label="breadcrumb" class="bg-light rounded-3 p-3 mb-4">
+                        <ol class="breadcrumb mb-0">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a href="#">User</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">User Profile</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card mb-4">
+                        <div class="card-body text-center">
+                            <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3.webp" alt="avatar" class="rounded-circle img-fluid" style="width: 150px;">
+                            <h5 class="my-3">John Smith</h5>
+                            <p class="text-muted mb-1">Full Stack Developer</p>
+                            <p class="text-muted mb-4">Bay Area, San Francisco, CA</p>
+                            <div class="d-flex justify-content-center mb-2">
+                                <div id="coverphoto">
+                                    <figure id="figure">
+                                        <!-- <%=  "<imG src='$profile_photo_path' id='photo'> </img>" %> </figure> -->
+                                        <!-- action="../php/store_image.php"  -->
+                                        <form action="/pages/profile" method="POST" id="profilChange" enctype="multipart/form-data">
+                                            <input type="file" name="profile" id="file1">
+                                            <input type="hidden" name="email" value="">
+                                            <input type="submit" name="submit" value="Upload">
+                                        </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-4 mb-lg-0">
+                        <div class="card-body p-0">
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <%- include('../partials/footer'); -%>
+</body>
+
+</html>

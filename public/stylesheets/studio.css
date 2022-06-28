@@ -1,0 +1,189 @@
+    <style>* {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    html {
+        width: 100%;
+        height: 100%;
+    }
+    
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        width: 100%;
+        min-height: 100%;
+        /* background-color: #000; */
+        overflow: scroll;
+    }
+    
+    .main {
+        margin-top: 10px;
+        width: 100%;
+        height: auto;
+        flex-basis: 100px;
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        overflow: scroll;
+    }
+    
+    footer {
+        flex-basis: 70px;
+        flex-grow: 0;
+        width: 100%;
+        height: 770px;
+        background-color: rgb(41, 24, 24);
+    }
+    
+    .side-bar {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        animation: side-bar-enterance 0.2s ease;
+        overflow-y: hidden;
+        display: none;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        background-color: #0008;
+        z-index: 566;
+    }
+    
+    .side-bar-stack {
+        width: 100%;
+        max-width: 360px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        overflow-y: auto;
+    }
+    /*
+      @media (min-width: 900px) {
+        .side-bar {
+          position: relative;
+          flex-basis: 320px;
+          order: 3;
+          width: auto;
+          flex-grow: 0;
+          overflow-y: hidden;
+        }
+      }
+      @media (min-width: 420px) {
+        .side-bar-stack {
+          width: 320px;
+        }
+      }
+      */
+    
+    .side-bar-window {
+        width: 25%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 35px;
+        background-color: #fff;
+        gap: 5px;
+        overflow: scroll;
+    }
+    
+    .section>span {
+        margin: 10px 20px;
+        font-size: 14px;
+        color: #89428E;
+        font-weight: bolder;
+        text-transform: uppercase;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .setting-box,
+    .field-container {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        padding: 5px 20px;
+        cursor: pointer;
+    }
+    
+    .setting-box:hover {
+        background-color: #eee;
+    }
+    
+    .setting-box img,
+    .setting-icon,
+    .field-icon {
+        height: 25px;
+    }
+    
+    .setting-box>span {
+        color: #000;
+        /*color: #030303;*/
+        text-transform: lowercase;
+    }
+    
+    .embaded {
+        display: none;
+        flex-direction: column;
+        padding: 0 20%;
+        border: 2px solid brown;
+        color: #000;
+    }
+    
+    #workSpace {
+        border: 5px groove goldenrod;
+        width: 70%;
+        height: 70%;
+        align-self: center;
+        margin-bottom: 20px;
+        overflow: scroll;
+        padding: 30px;
+    }
+    
+    #plusBtn {
+        background-color: #7f5a83;
+        background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 20px;
+        width: 200px;
+        color: white;
+        border: 0;
+        margin: 10px;
+    }
+    
+    #publishBtn {
+        background-color: green;
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 20px;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bolder;
+        width: 100px;
+        color: white;
+        border: 0;
+        margin: 10px;
+    }
+    
+    #workSpace input {
+        width: 100%;
+        max-width: 150px;
+        margin: 10px;
+        display: block;
+    }
+    
+    #workSpace input[type="radio"],
+    #workSpace input[type="checkbox"] {
+        width: auto;
+        display: inline;
+    }

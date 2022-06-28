@@ -1,0 +1,108 @@
+body {
+
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+display:flex;
+margin-bottom:100px;
+
+
+}
+body {
+
+font-family: 'Poppins', sans-serif;
+
+}
+
+
+
+#RegisterBtn{
+
+
+     border: none;
+     color: white;
+     padding: 7px 25px;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+
+     margin: 4px 2px;
+     cursor: pointer;
+     width:30vw;
+     background-color:rgb(41, 24, 24);
+     transition: transform 0.3s ease;
+}
+
+.gen label{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+margin-right: 30px;
+margin-bottom:10px;
+}
+.bdate {
+
+margin-right: 30px;
+margin-bottom:10px;
+}
+
+#form {
+    width: 400px;
+    margin: 20vh auto 0 auto;
+    padding: 20px;
+    background-color: rgb(232, 235, 233);
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+#form h1 {
+    color: #0f2027;
+    text-align: center;
+}
+
+#form button {
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    color: white;
+    background-color:rgb(41, 24, 24);
+    border: none;
+    border-radius: 4px;
+}
+
+.input-control {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-control input {
+    border: 2px solid #f0f0f0;
+	border-radius: 4px;
+	display: block;
+	font-size: 12px;
+  margin-left: -10px;
+	padding: 10px;
+
+
+	width: 100%;
+}
+
+.input-control input:focus {
+    outline: 0;
+}
+
+.input-control.success input {
+    border-color: #09c372;
+}
+
+.input-control.error input {
+    border-color: #ff3860;
+
+}
+
+.input-control .error {
+    color: #ff3860;
+    font-size: 11px;
+    height: 13px;
+}

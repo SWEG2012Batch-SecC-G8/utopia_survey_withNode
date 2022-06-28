@@ -1,0 +1,19 @@
+#ownerName,#survDescription,#participantNumber{
+background-color:rgb(247, 246, 242);
+padding: 5px;
+border: 0;
+
+}
+.container{
+display:grid;
+justify-content: center;
+}
+#createSumbit{
+  background-color: #7f5a83;
+  background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
+  padding: 10px;
+  border-radius: 10px;
+  font-size:20px;width:370px;
+  color: white;
+  border: 0;
+}

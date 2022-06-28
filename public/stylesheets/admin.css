@@ -1,0 +1,86 @@
+#ownerName,
+#survDescription,
+#participantNumber {
+    background-color: rgb(247, 246, 242);
+    padding: 5px;
+    border: 0;
+}
+
+.container {
+    display: grid;
+    justify-content: center;
+}
+
+#report_about,
+#modify_what {
+    padding: 3vw;
+    margin: 2vw;
+    display: block;
+    justify-content: center;
+    margin: 20px;
+    background-color: #7f5a83;
+    background-image: linear-gradient(315deg, #1dd426 0%, #c6ec1b 74%);
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    width: 300px;
+    color: white;
+    border: 0;
+}
+
+#type_select0,
+#type_select1,
+#type_select2,
+#type_select3,
+#type_select4,
+#query,
+#modify {
+    padding: 3vw;
+    margin: 2vw;
+    display: block;
+    justify-content: center;
+    margin: 20px;
+    background-color: #7f5a83;
+    background-image: linear-gradient(315deg, #00f10c 0%, #6e8507 74%);
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    width: 370px;
+    color: white;
+    border: 0;
+}
+
+#query_lable {
+    font-size: 2.5vw;
+    color: rgb(41, 24, 24);
+    text-align: center;
+    font-weight: bold;
+    font-family: cursive;
+    transition: transform 0.3s ease;
+}
+
+#generate,
+#modify_input {
+    background-color: #7f5a83;
+    background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    width: 250px;
+    color: white;
+    border: 0;
+    margin-bottom: 20px;
+}
+
+#delete_name,
+#file_input {
+    background-color: #787279;
+    background-image: linear-gradient(315deg, #7f5a83 0%, #9fa9af 74%);
+    padding: 10px;
+    margin: 30px;
+    border-radius: 10px;
+    font-size: 20px;
+    width: 370px;
+    color: white;
+    border: 0;
+}

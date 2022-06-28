@@ -1,0 +1,39 @@
+.introtText{
+
+background-image:url("../images/bookglass.jpg");
+
+font-size:7vw;
+color:white ;
+text-align:center;
+}
+.introtText .pia{
+color:black;
+
+
+}
+.AftreButtonText{
+font-size:2vw
+
+}
+.p3container{
+display: grid;
+grid-template-columns: 1fr 1fr;
+
+}
+.btnsWithDescription{
+border-radius: 40px;
+padding:3vw;
+margin:2vw;
+transition: transform .4s ease;
+}
+.btnsWithDescription:hover{
+background-color: rgb(230, 232, 231);
+transform: scale(1.1);
+
+}
+
+.ToTop{
+justify-content: center;
+text-align: center;
+font-size:24px;
+}

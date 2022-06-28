@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="../../stylesheets/buttons.css">
+    <link rel="stylesheet" href="../../stylesheets/header-footer.css">
+    <link rel="stylesheet" href="../../stylesheets/Registration.css">
+    <link rel="stylesheet" href="../../stylesheets/admin.css">
+    <link rel="stylesheet" href="../../stylesheets/analyze.css">
+    <link rel="stylesheet" href="../../stylesheets/button.css">
+    <link rel="stylesheet" href="../../stylesheets/create_survey.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+</head>
+
+<body topmargin=0px leftmargin=0px rightmargin=0px bottommargin=0px>
+    <header>
+        <a class="logo" href="../index.html"><img src="../logo/logo1.png" alt="logo image " height=100px></a>
+        <nav class="navigationBar">
+            <ul class="nav">
+
+                <li>
+                    <a id="homeL" href=""> </a>
+                </li>
+
+
+
+                <li>
+                    <a id="signupL" href="/pages/signup"> </a>
+                </li>
+                <li>
+                    <a id="signupL" href="/user/first">landing page</a>
+                </li>
+
+                <div class="dropdown">
+                    <a class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li>
+                            <a class="dropdown-item  text-dark" href="logout">logout </a>
+                        </li>
+                        <li>
+                            <a id="profileL" class="dropdown-item  text-dark" href="/user/profile"> </a>
+                            <li>
+                                <a id=" logoutL " class="dropdown-item text-dark " href="../php/logout.php "></a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item text-dark " href="../pages/page 3.php?email=?php echo $_SESSION[ 'email']?>">
+
+                                </a>
+                            </li>
+                            <li>
+                                <a id="contactusL" class="dropdown-item  text-dark" href="../pages/contactUs.php">
+                                </a>
+                            </li>
+
+                            <li>
+                                <a id="aboutusL" class="dropdown-item  text-dark" href="../index.php#aboutus"></a>
+                            </li>
+                            <li>
+                                <a id="helpL" class="dropdown-item  text-dark" href="contactus"> </a>
+                            </li>
+
+
+
+                    </ul>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+
+
+
+        <h2 ALIGN=CENTER>Provide the detail of your survey</h2>
+        <form class="" action="" method="POST">
+            <label for="SurveyTitle">Survey Title : <input id="ownerName" type="text" name="survey_title" value="" placeholder="Your survey title" ></label><br><br>
+            <label for="Descritption">Description : <textarea id="survDescription" name="description" value="" placeholder="description" ></textarea></label><br><br>
+            <label for="Participant Number">Participant Limit : <input id="participantNumber" type="number" name="participant_limit" value="" placeholder="How Many Participant?" ></label><br><br>
+
+            <label for="gender">Gender:
+          <label for="male"><input type="radio" name="gender" value="male" id="male" > Male</label>
+            <label for="female"> <input type="radio" name="gender" value="female" id="female"> Female</label>
+            <label for="both"><input type="radio" name="gender" value="Both" id="both" >Both</label>
+            </label><br><br>
+            <label for="created_date">Created date : <input type="date" name="created_date" value=""></label><br><br>
+            <label for="dead_line">Dead Line : <input type="date" name="dead_line" value=""></label><br><br>
+            <label for="job"> Target Job:
+        <select class="jobselection" name="job">
+          <option value="Everyone">Everyone</option>
+          <option value="student">Student</option>
+          <option value="Employeed">Emloyeed</option>
+          <option value="unemployeed">Unemployeed</option>
+          <option value="BussinessOwner">Bussiness Owner</option>
+
+        </select>
+    </label> <br><br>
+
+            </select>
+            </label> <br><br>
+            <label for="job"> Target Age:
+        <select class="ageselection" name="targetage">
+          <option value="Everyone">Everyone</option>
+          <option value="child">0-10</option>
+          <option value="teenage">10-18</option>
+          <option value="young">18-35</option>
+          <option value="man">35-65</option>
+          <option value="old">65 and above</option>
+
+        </select>
+        
+        </select>
+    </label> <br><br>
+            <label for="category"> category </label>:
+            <select class="ageselection" name="category">
+          <option value="business">business</option>
+          <option value="ecucation">ecucation</option>
+          <option value="spritual">spritual</option>
+          <option value="political">political</option>
+          <option value="social">social</option>
+          <option value="scientific">scientific</option>
+
+        </select>
+            </label> <br><br>
+            <label for="job"> Target Place:</label>
+            <select class="placeselection" name="target_place" id="target_place">
+          <option value="Everywhere">Everywhere</option>
+          <option value="Africa">Africa</option>
+          <option value="Asia">Asia</option>
+          <option value="Europe">Europe</option>
+          <option value="South_America">South America</option>
+          <option value="NorthAmerica">North America</option>
+          <option value="Australia">Australia</option>
+
+        </select>
+            </label> <br><br>
+            <input type="submit" id="createSumbit" style="text-decoration:none;" name="submit" value="CREATE">
+            <!-- <a href="../php/insert_suvey.php" id="createSumbit" style="text-decoration: none;  ">Create</a> -->
+
+        </form><br><br><br>
+        </td>
+        <td width=20%></td>
+    </div>
+    <%- include('../partials/footer'); -%>
+</body>
+
+</html>

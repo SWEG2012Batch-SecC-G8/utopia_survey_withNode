@@ -1,0 +1,105 @@
+header {
+	background: rgb(41, 24, 24);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0px 70px;
+	text-decoration: none;
+}
+.logo {
+	cursor: pointer;
+	margin-right: 0px;
+}
+.nav li {
+	display: inline-block;
+	padding: 0px 15px;
+}
+
+.nav li a {
+	color: white;
+	transition: 0.4s;
+	text-decoration: none;
+	font-size: 18px;
+	text-transform: capitalize;
+	letter-spacing: 2px;
+}
+.loginLink {
+	cursor: pointer;
+	color: black;
+	letter-spacing: 2px;
+	font-size: 16px;
+	padding: 10px 30px;
+	border-radius: 3px;
+	background: white;
+	text-decoration: none;
+	transition: transform 0.3s ease;
+}
+.loginLink:hover {
+	background: grey;
+	/* transform: scale(1.4); */
+}
+.nav li a:hover {
+	/* background-color:rgb(87, 49, 49); */
+	font-size: 150%;
+	/* transform: scale(1.4); */
+}
+
+.nav li a:active {
+	background-color: rgb(87, 49, 49);
+}
+
+/*
+
+FOOTER
+
+ */
+
+footer {
+	background-color: rgb(41, 24, 24);
+	width: 100%;
+}
+
+.innerFooter {
+	margin: 0px;
+	padding: 0px;
+}
+.socialLinks {
+	display: flex;
+}
+.socialLinks ul {
+	display: flex;
+	width: 300px;
+	height: 30px;
+	margin: auto;
+}
+.socialLinks ul li {
+	list-style: none;
+	padding: 20px 3vw;
+	font-size: 25px;
+}
+.socialItems a img {
+	transition: transform 0.2s ease;
+}
+.socialItems a img:hover {
+	transform: scale(1.4);
+}
+
+.outterFooter {
+	text-align: center;
+	margin-top: 40px;
+	padding: 10px;
+	color: white;
+	font-size: 18px;
+	background-color: rgb(125, 97, 95);
+}
+@media screen and (max-width: 600px) {
+	header {
+		background: rgb(41, 24, 24);
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0px 70px;
+		text-decoration: none;
+	}
+}

@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+}
+
+.FilterMethods {
+    font-family: monospace;
+    background-color: #7f5a83;
+    background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+#CurrentSurveys {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#EachSurveys h4 {
+    font-size: 2vw;
+}
+
+#EachSurveys {
+    border: 1px solid black;
+    margin: 10px;
+    padding: 0px 15px;
+    background-color: grey;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width:600px) {}
+
+header {
+    background: rgb(41, 24, 24);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 70px;
+    text-decoration: none;
+}
+
+button,
+input {
+    background-color: rgb(150, 156, 238);
+}
+
+button,
+input:hover {
+    background-color: orange;
+}
+
+button,
+input:focus {
+    background-color: rgb(43, 255, 0);
+}
+
+button,
+input:active {
+    background-color: green;
+}

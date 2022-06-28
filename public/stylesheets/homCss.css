@@ -1,0 +1,210 @@
+.prevNext .next-animate-slider {
+	/* background-color: rgb(199, 183, 183); */
+	cursor: pointer;
+	position: absolute;
+	top: 60%;
+	width: auto;
+	padding: 16px;
+	/* background-color: #ffc20e; */
+	margin-top: -22px;
+	color: #ada110;
+	font-weight: 100;
+	font-size: 35px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+	right: 10%;
+	border-radius: 3px 0 0 3px;
+	/* padding: 10;
+ size: 10; */
+}
+
+.prevNext .next-animate-slider:hover {
+	background-color: rgb(231, 216, 218);
+}
+
+.prevNext .prev-animate-slider {
+	cursor: pointer;
+	position: absolute;
+	top: 60%;
+	width: auto;
+	padding: 16px;
+	/* background-color: #ffc20e; */
+	margin-top: -22px;
+	color: #ada110;
+	font-weight: 100;
+	font-size: 35px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+	left: 14%;
+}
+
+.prevNext .prev-animate-slider:hover {
+	background-color: rgb(231, 216, 218);
+}
+
+.animation {
+	margin: 100px 20px;
+	height: 10%;
+	transform: translateX(17%);
+}
+
+body {
+	margin: 0px;
+}
+
+* {
+	/* border: 2px solid black; */
+	font-family: serif;
+}
+
+.anitxt .introtText {
+	background-image: url("../images/bookglass.jpg");
+	font-size: 7vw;
+	color: white;
+	text-align: center;
+}
+
+.introtText .pia {
+	color: black;
+}
+
+.btndescription:hover {
+	background-color: rgb(230, 232, 231);
+}
+
+.ServRow1,
+.ServRow2,
+.ServRow3,
+.ServRow4 {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 40px;
+}
+
+.descriptionTitle {
+	font-size: 2.5vw;
+	color: rgb(41, 24, 24);
+	text-align: center;
+	font-weight: bold;
+	font-family: cursive;
+	transition: transform 0.3s ease;
+}
+
+.descriptionTitle:hover {
+	transform: scale(1.2);
+}
+
+.descriptionDetail {
+	font-size: 2.3vw;
+	text-align: center;
+}
+
+.image img {
+	height: auto;
+	width: 100%;
+	transition: transform 0.3s ease;
+}
+
+.image:hover {
+	transform: scale(1.2);
+}
+
+.contactPart {
+	display: flex;
+	width: 100%;
+	background-color: rgb(230, 232, 231);
+}
+
+.ContactDescription,
+.ContactForm,
+.ContacInfo {
+	float: left;
+	width: 32%;
+}
+
+.contactForm .sendMessage {
+	align-items: right;
+}
+
+.AboutUs {
+	margin-top: 5rem;
+}
+
+.AboutUs .Video {
+	align-items: end;
+	float: right;
+	margin: 10px;
+}
+
+.ToTop {
+	text-align: center;
+	font-size: 24px;
+}
+
+/* working on the responsive ness of a pages */
+
+@media screen and (max-width: 600px) {
+	.contactPart {
+		width: 100%;
+		margin-top: 0;
+		flex-direction: column;
+	}
+	header {
+		background: rgb(41, 24, 24);
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0px 70px;
+		text-decoration: none;
+	}
+}
+
+/*
+.SocialMedia a {
+margin: 0px 30px;
+align-items: center;
+padding-top: 10px 0px;
+width:100%
+margin:auto;
+
+
+
+}
+
+.SocialMedia a :hover{
+background-color:rgba(197, 199, 197,0.6);
+width:60px;
+align-items: center;
+
+}
+.CopyRight a{
+color:white;
+text-decoration: none;
+
+}
+.CopyRight a:hover{
+font-size: 25px;
+} */
+
+/*
+.ServRow2 .row2image, .row2description{
+float: left;
+width:49%;
+height:400px;
+
+}
+.ServRow3 .row3image, .row3description{
+float: left;
+width:49%;
+height:400px;
+
+}
+.ServRow4 .row4image, .row4description{
+float: left;
+width:49%;
+height:400px;
+
+} */

@@ -1,0 +1,138 @@
+<!-- <!DOCTYPE html>
+    <html lang="en" dir="ltr">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial,scale=1">
+        <title></title>
+        <link rel="stylesheet" href="../../stylesheets/header-footer.css">
+        <link rel="stylesheet" href="../../stylesheets/Registration.css">
+
+
+    </head> -->
+
+
+<!-- <body topmargin=0px leftmargin=0px rightmargin=0px bottommargin=0px> -->
+<!--- <header>
+            <a class="logo" href="../index.html"><img src="../logo/logo1.png" alt="logo image " height=100px></a>
+            <nav class="navigationBar">
+                <ul class="nav">
+
+                    <li><a href="../index.php"> Home </a></li>
+                    <li><a href="../index.php#aboutus">About Us </a></li>
+                    <li><a href="contac page.html">Contact Us </a></li>
+                    <li><a href="log in.php">Login  </a></li>
+                    <li>
+                        <a href="registration page.html"> </a>
+                    </li>
+                </ul>
+
+            </nav>
+            <a class="loginLink" href="log in.php">Login  </a> 
+        </header>-->
+<%- include('../partials/header',{title:'Signup'}); -%>
+    <div class="container" style="display:block">
+
+
+        <form id="form" method="POST" action="">
+            <h1>Registration</h1>
+
+            <div class="input-control">
+                <label for="fname">First name</label>
+                <input id="fname" name="fname" type="text">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="lname">Last name</label>
+                <input id="lname" name="lname" type="text">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="password">Password </label>
+                <input id="password" name="password" type="password">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="password2">Confirm password</label>
+                <input id="password2" name="cpassword" type="password">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="text">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="phonenumber">Phone Number</label>
+                <input id="phonenum" name="phonenumber" type="tel">
+                <div class="error"></div>
+            </div>
+            <div class="gen">
+                <label class="gen" for="Gender">Gender:
+                    <label class="gen" for="male"><input type="radio" name="gender" value="male" id="male" > Male</label>
+                <label class="gen" for="female"> <input type="radio" name="gender" value="female" id="female"> Female</label>
+                <label class="gen" for="Other"> <input type="radio" name="gender" value="other" id="other" checked="checked">Other</label>
+                </label>
+            </div>
+            <div class="birthdate">
+                <label for="birthdate">Birth Date : <input id="birthdate" type="date"  name="birthdate" value=""></label>
+            </div>
+            <!-- <div class="profilePhoto">
+                <label for="profilePhoto">profile photo : <input id="prof" type="file" enctype="multipart/form-data"  name="uploadFile"></label>
+            </div> -->
+            <!-- <script defer src="../scripts/regTrial.js"></script> -->
+            <div class="job">
+                <label for="job"> Job:
+                  <select class="jobselection" name="job">
+                    <option value="student">Student</option>
+                    <option value="Employeed">Emloyeed</option>
+                    <option value="unemployeed">Unemployeed</option>
+                    <option value="BussinessOwner">Bussiness Owner</option>
+                  </select>
+              </label>
+
+            </div>
+            <div class="notification">
+                <label for="notification"><input type="checkbox" name="notification" value="" checked="checked">
+                send me email every time there is new survey related to my profile
+              </label>
+
+                <% 
+			  if(typeof msg != 'undefined' && msg != "")
+			  { 
+			  %>
+                    <div class="col-12">
+                        <div class="success-msg">
+                            <%= msg %>
+                        </div>
+                    </div>
+                    <% 
+			  }
+					  
+			  if(typeof error !== 'undefined' && error != "")
+			  { 
+			  %>
+                        <div class="col-12">
+                            <div class="err-msg">
+                                <%= error %>
+                            </div>
+                        </div>
+                        <% 
+			  } 
+			  %>
+
+                            <div class="form-btns">
+                                <input type="submit" value="Sign Up">
+
+                                <div class="link options">
+                                    Already have an account?
+                                    <a href="./login">Login</a>
+                                </div>
+                            </div>
+        </form>
+
+        </div>
+
+
+
+        <%- include('../partials/footer',{title:'Signup'}); -%>
